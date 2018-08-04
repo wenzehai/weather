@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<div id="root">
+    <div data-reactroot="" class="static-comp">
+        <nav>
+            <div class="logo-box"><a class="logo" href="index.html"></a></div>
+            <div class="nav-content"><a class="nav-item homepage" href="#/homepage">主页</a>
+                <div class="nav-item static" href="./static">数据中心</div>
+                <div class="nav-item business">业务平台</div>
+                <a class="nav-item product" href="#/product">产品制作</a><a class="nav-item doc" href="#/document">文档管理</a>
+                <div class="nav-item task active">任务平台</div>
+                <ul class="second-menu" style="left: 450px;">
+                    <li><a href="personal.html">个人任务中心</a></li>
+                    <li><a href="manage.html">任务管理平台</a></li>
+                    <li><a href="show.html">任务展示平台</a></li>
+                </ul>
+                <div class="nav-item manage">发布系统</div>
+                <a class="nav-item manage">后台管理</a>
+            </div>
+            <div class="nav-personal"><a class="message"><span class="new-message">3</span></a><a class="help">帮助</a><a
+                    class="signout">退出</a></div>
+        </nav>
+        <div class="main-container">
+            <div class="main-right width-100">
+                <div class="box-mbx"><!-- react-text: 117 -->你的位置：<!-- /react-text --><span><a href="#/homepage">主页</a>
+                    <!-- react-text: 120 --> &gt; <!-- /react-text --></span><span><a>任务平台</a><!-- react-text: 123 --> &gt;
+                    <!-- /react-text --></span><span><a>任务展示平台</a></span></div>
+                <div class="content">
+                    <div class="task-search"><!-- react-text: 128 -->年度：<!-- /react-text --><select>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                    </select><!-- react-text: 134 -->目标分类：<!-- /react-text --><select>
+                        <option>常规任务</option>
+                        <option>重点任务</option>
+                    </select><!-- react-text: 138 -->任务分类：<!-- /react-text --><select>
+                        <option>基础业务</option>
+                        <option>基础业务</option>
+                    </select><!-- react-text: 142 -->进度：<!-- /react-text --><select>
+                        <option>完成</option>
+                        <option>未完成</option>
+                    </select>
+                        <button>筛选</button>
+                        <button>动态分析图表</button>
+                    </div>
+                    <div class="task-main">
+                        <div class="task-display width-100">
+                            <div class="title"><!-- react-text: 151 -->当前搜索出任务总数为<!-- /react-text --><span
+                                    class="task-num">10</span></div>
+                            <div class="table-title"><span class="left">项目</span>
+                                <div class="right">
+                                    <span>分配日期</span><span>序号</span><span>任务标题</span><span>任务期限</span><span>是否完成</span><span>完成日期</span><span>负责人</span><span>任务自述</span><span>查看</span>
+                                </div>
+                            </div>
+                            <div class="table-item">
+                                <div class="table-item-left">观测网络及装备保障</div>
+                                <div class="table-item-right">
+                                    <ul>
+                                        <li>2017-11-11</li>
+                                        <li>1</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li>2017-11-11</li>
+                                        <li><input type="checkbox" disabled="" value="on"></li>
+                                        <li>2017-11-11</li>
+                                        <li>张三</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li><a class="task-detail">任务详情</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>2017-11-11</li>
+                                        <li>1</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li>2017-11-11</li>
+                                        <li><input type="checkbox" disabled="" value="on"></li>
+                                        <li>2017-11-11</li>
+                                        <li>张三</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li><a class="task-detail">任务详情</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>2017-11-11</li>
+                                        <li>1</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li>2017-11-11</li>
+                                        <li><input type="checkbox" disabled="" value="on"></li>
+                                        <li>2017-11-11</li>
+                                        <li>张三</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li><a class="task-detail">任务详情</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>2017-11-11</li>
+                                        <li>1</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li>2017-11-11</li>
+                                        <li><input type="checkbox" disabled="" value="on"></li>
+                                        <li>2017-11-11</li>
+                                        <li>张三</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li><a class="task-detail">任务详情</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>2017-11-11</li>
+                                        <li>1</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li>2017-11-11</li>
+                                        <li><input type="checkbox" disabled="" value="on"></li>
+                                        <li>2017-11-11</li>
+                                        <li>张三</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li><a class="task-detail">任务详情</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>2017-11-11</li>
+                                        <li>1</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li>2017-11-11</li>
+                                        <li><input type="checkbox" disabled="" value="on"></li>
+                                        <li>2017-11-11</li>
+                                        <li>张三</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li><a class="task-detail">任务详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table-item">
+                                <div class="table-item-left">预报服务</div>
+                                <div class="table-item-right">
+                                    <ul>
+                                        <li>2017-11-11</li>
+                                        <li>1</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li>2017-11-11</li>
+                                        <li><input type="checkbox" disabled="" value="on"></li>
+                                        <li>2017-11-11</li>
+                                        <li>张三</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li><a class="task-detail">任务详情</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li>2017-11-11</li>
+                                        <li>1</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li>2017-11-11</li>
+                                        <li><input type="checkbox" disabled="" value="on"></li>
+                                        <li>2017-11-11</li>
+                                        <li>张三</li>
+                                        <li>认真开展各项观测业务</li>
+                                        <li><a class="task-detail">任务详情</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="ant-pagination " unselectable="unselectable">
+                                <li title="上一页" class="ant-pagination-prev"><a></a></li>
+                                <li title="1" class="ant-pagination-item ant-pagination-item-1"><a>1</a></li>
+                                <li title="2"
+                                    class="ant-pagination-item ant-pagination-item-2 ant-pagination-item-active">
+                                    <a>2</a></li>
+                                <li title="3" class="ant-pagination-item ant-pagination-item-3"><a>3</a></li>
+                                <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                                <li title="5" class="ant-pagination-item ant-pagination-item-5"><a>5</a></li>
+                                <li title="向后 5 页" class="ant-pagination-jump-next"><a></a></li>
+                                <li title="10" class="ant-pagination-item ant-pagination-item-10"><a>10</a></li>
+                                <li title="下一页" class="ant-pagination-next"><a></a></li>
+                                <div class="ant-pagination-options">
+                                    <div class="ant-pagination-options-quick-jumper"><!-- react-text: 288 -->跳至
+                                        <!-- /react-text --><input type="text" value="2"><!-- react-text: 290 -->页
+                                        <!-- /react-text --></div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot">
+                    <div><span>主办单位：庆城县气象局</span><span>技术支持：浩森网络</span><span>客服电话：(029)88748238</span></div>
+                </div>
+            </div><!-- react-empty: 296 --><!-- react-empty: 297 --></div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
+
+
+</body>
+</html>

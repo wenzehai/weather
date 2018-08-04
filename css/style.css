@@ -1,0 +1,162 @@
+/*公共样式部分*/
+table {
+    border-collapse: collapse;
+
+}
+.modal {
+    left: 50%;
+    margin-left: -300px;
+}
+/*
+導航hover效果
+*/
+.nav-content .task + .second-menu {
+    display: none;
+}
+.nav-content .task:hover + .second-menu {
+    display: block;
+}
+.nav-content .second-menu:hover {
+    display: block;
+}
+.nav-content .second-menu:hover li:hover {
+    background: #07405e;
+}
+
+
+
+
+
+
+/*personal页面*/
+.personal .tableWrap {
+    margin-top: 20px;
+}
+.personal .task-search .btn-primary {
+    background: #097ff9;
+}
+
+
+/*表格部分*/
+.personal .tableWrap {
+    width: 100%;
+    min-height: 450px;
+}
+.personal .tableWrap table {
+    width: inherit;
+}
+.personal .tableWrap table thead tr th {
+    border-left: 1px solid #fff;
+    background: #f0f0f0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.personal .tableWrap table tbody tr:nth-child(even) {
+     background: #f9f9f9;
+ }
+.personal .tableWrap table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+.personal .tableWrap table tbody tr:hover {
+    background: #fff4e5;
+}
+.personal .tableWrap table tbody tr td {
+    font-size: 12px;
+    text-align: left;
+    color: #666;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.personal .tableWrap table tbody tr td a {
+    color: #097ff9 !important;
+}
+
+/*分页*/
+.personal .paginationWrap {
+    margin-top: 10px;
+}
+.personal .paginationWrap .task-title {
+    padding: 5px;
+    font-size: 14px;
+}
+.personal .paginationWrap .task-title .task-num {
+    color: #097ff9;
+    margin-left: 6px;
+}
+
+.personal .detail_modal .modal-body .line {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.personal .detail_modal .modal-body .line> label {
+    float: left;
+    text-align: right;
+    width: 70px;
+    font-size: 13px;
+    padding-right: 10px;
+    margin-top: 6px;
+}
+.personal .detail_modal .modal-body .line .input-block {
+    margin-left: 80px;
+}
+.personal .detail_modal .modal-body .line .input-block .fileLink {
+    color: #097ff9 !important;
+    line-height: 30px;
+}
+.personal .detail_modal .modal-body .line .input-block img {
+    width: 100px;
+    height: 100px;
+}
+
+/*管理页面*/
+.managePage {
+
+}
+/*表格部分*/
+.managePage .tableWrap {
+    width: 100%;
+    min-height: 450px;
+}
+.managePage .tableWrap table {
+    width: inherit;
+}
+.managePage .tableWrap table thead tr th {
+    border-left: 1px solid #fff;
+    background: #3792e3;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.managePage .tableWrap table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+.managePage .tableWrap table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+.managePage .tableWrap table tbody tr:hover {
+    background: #b5e448;
+}
+.managePage .tableWrap table tbody tr td {
+    font-size: 12px;
+    text-align: left;
+    color: #666;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.managePage .tableWrap table tbody tr td a {
+    color: #097ff9 !important;
+}
+
+
+
+
+

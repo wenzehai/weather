@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<div id="root">
+    <div data-reactroot="" style="height: 100%;">
+        <nav>
+            <div class="logo-box"><a class="logo" href="index.html"></a></div>
+            <div class="nav-content"><a class="nav-item homepage active" href="#/homepage">主页</a>
+                <div class="nav-item static" href="./static">数据中心</div>
+                <div class="nav-item business">业务平台</div>
+                <a class="nav-item product" href="#/product">产品制作</a><a class="nav-item doc" href="#/document">文档管理</a>
+                <div class="nav-item task">任务平台</div>
+                <ul class="second-menu" style="left: 450px;">
+                    <li><a href="personal.html">个人任务中心</a></li>
+                    <li><a href="manage.html">任务管理平台</a></li>
+                    <li><a href="show.html">任务展示平台</a></li>
+                    <!--<ul class="third-menu" style="display: none;">
+                        <li><a href="#/static/bigData">气象数据库</a></li>
+                        <li><a href="#">农业数据库</a></li>
+                        <li><a href="#">灾害数据库</a></li>
+                        <li><a href="#">特殊数据库</a></li>
+                    </ul>-->
+                </ul>
+                <div class="nav-item manage">发布系统</div>
+                <a class="nav-item manage ">后台管理</a>
+
+
+            </div>
+            <div class="nav-personal"><a class="message"><span class="new-message">3</span></a><a class="help">帮助</a><a
+                    class="signout">退出</a></div>
+        </nav>
+        <div class="main-container home-container">
+            <div>
+                <div class="home-left">
+                    <div class="rdr-Calendar"
+                         style="width: 280px; padding: 10px; background: rgb(255, 255, 255); border-radius: 2px; display: inline-block; box-sizing: border-box; letter-spacing: 0px; color: rgb(0, 0, 0);">
+                        <div class="rdr-MonthAndYear">
+                            <div class="rdr-MonthAndYear-innerWrapper"
+                                 style="text-align: center; box-sizing: border-box; font-size: 12px; padding: 10px 0px; height: 38px; line-height: 18px;">
+                                <button type="button" class="rdr-MonthAndYear-button prev"
+                                        style="display: block; box-sizing: border-box; height: 18px; width: 18px; padding: 0px; margin: 0px 10px; border: none; background: rgb(189, 195, 199); box-shadow: none; outline: none; border-radius: 50%; float: left;">
+                                    <i style="display: block; width: 0px; height: 0px; padding: 0px; margin: 0px 0px 0px 1px; border-width: 4px 6px 4px 4px; border-style: solid; border-color: transparent rgb(52, 73, 94) transparent transparent; border-image: initial; text-align: center;"></i>
+                                </button>
+                                <span><span class="rdr-MonthAndYear-month">August</span><span
+                                        class="rdr-MonthAndYear-divider"> - </span><span class="rdr-MonthAndYear-year">2018</span></span>
+                                <button type="button" class="rdr-MonthAndYear-button next"
+                                        style="display: block; box-sizing: border-box; height: 18px; width: 18px; padding: 0px; margin: 0px 10px; border: none; background: rgb(189, 195, 199); box-shadow: none; outline: none; border-radius: 50%; float: right;">
+                                    <i style="display: block; width: 0px; height: 0px; padding: 0px; margin: 0px 0px 0px 7px; border-width: 4px 4px 4px 6px; border-style: solid; border-color: transparent transparent transparent rgb(52, 73, 94); border-image: initial; text-align: center;"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="rdr-WeekDays"><span class="rdr-WeekDay"
+                                                        style="width: 37.1429px; height: 18.5714px; line-height: 18.5714px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; font-weight: 600; margin-bottom: 1px;">Su</span><span
+                                class="rdr-WeekDay"
+                                style="width: 37.1429px; height: 18.5714px; line-height: 18.5714px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; font-weight: 600; margin-bottom: 1px;">Mo</span><span
+                                class="rdr-WeekDay"
+                                style="width: 37.1429px; height: 18.5714px; line-height: 18.5714px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; font-weight: 600; margin-bottom: 1px;">Tu</span><span
+                                class="rdr-WeekDay"
+                                style="width: 37.1429px; height: 18.5714px; line-height: 18.5714px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; font-weight: 600; margin-bottom: 1px;">We</span><span
+                                class="rdr-WeekDay"
+                                style="width: 37.1429px; height: 18.5714px; line-height: 18.5714px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; font-weight: 600; margin-bottom: 1px;">Th</span><span
+                                class="rdr-WeekDay"
+                                style="width: 37.1429px; height: 18.5714px; line-height: 18.5714px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; font-weight: 600; margin-bottom: 1px;">Fr</span><span
+                                class="rdr-WeekDay"
+                                style="width: 37.1429px; height: 18.5714px; line-height: 18.5714px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; font-weight: 600; margin-bottom: 1px;">Sa</span>
+                        </div>
+                        <div class="rdr-Days"><span style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive rdr-Sunday"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">29</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">30</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">31</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">1</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">2</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">3</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-selected undefined"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s; background: rgb(231, 76, 60); color: rgb(255, 255, 255);">4</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day rdr-Sunday"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">5</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">6</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">7</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">8</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">9</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">10</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">11</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day rdr-Sunday"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">12</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">13</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">14</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">15</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">16</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">17</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">18</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day rdr-Sunday"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">19</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">20</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">21</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">22</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">23</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">24</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">25</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day rdr-Sunday"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">26</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">27</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">28</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">29</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">30</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; cursor: pointer; transition: transform 0.1s ease 0s;">31</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">1</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive rdr-Sunday"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">2</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">3</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">4</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">5</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">6</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">7</span></span><span
+                                style="width: 37.1429px; height: 37.1429px; display: inline-block;"><span
+                                class="rdr-Day is-passive"
+                                style="width: 37.1429px; height: 37.1429px; line-height: 37.1429px; box-sizing: border-box; display: inline-block; letter-spacing: initial; text-align: center; font-size: 12px; transition: transform 0.1s ease 0s; opacity: 0.4;">8</span></span>
+                        </div>
+                    </div>
+                    <div class="member"><!--<img src="fcadea1ac20354b8bcc0a8eefb60c730.png">-->
+                        <div><span>当前用户：admin</span><br><span><!-- react-text: 142 -->登录时间：<!-- /react-text -->
+                            <!-- react-text: 143 -->2018-08-04 17:06:53<!-- /react-text --></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-right">
+                <div class="box-mbx"><!-- react-text: 146 -->你的位置：<!-- /react-text --><span><a
+                        href="homepage">主页</a></span></div>
+                <div class="content">
+                    <div class="message-main">
+                        <div class="message-box">
+                            <div class="message-title"><!-- react-text: 153 -->最新公告<!-- /react-text --><a>更多&gt;&gt;</a>
+                            </div>
+                            <ul></ul>
+                        </div>
+                        <div class="todo-box">
+                            <div class="message-title"><!-- react-text: 158 -->我的待办事项
+                                <!-- /react-text --><a>更多&gt;&gt;</a></div>
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="alert-box">
+                        <div class="alert-title"><span>预警提醒</span></div>
+                        <div class="alert-search">
+                            <div><span>状态：</span><a class="click-state state active">全部</a><a
+                                    class="click-state state false">已阅</a><a class="click-state state false">未阅</a>
+                            </div>
+                            <div><span>标题：</span><input class="search-input" placeholder="请输入标题..."></div>
+                            <div><span>时间：</span><span class="ant-calendar-picker"><span
+                                    class="ant-calendar-range-picker ant-input"><input readonly="" value=""
+                                                                                       placeholder="开始日期"
+                                                                                       class="ant-calendar-range-picker-input"><span
+                                    class="ant-calendar-range-picker-separator"> ~ </span><input readonly="" value=""
+                                                                                                 placeholder="结束日期"
+                                                                                                 class="ant-calendar-range-picker-input"><span
+                                    class="ant-calendar-picker-icon"></span></span></span>
+                                <button class="btn-search">查询</button>
+                            </div>
+                        </div>
+                        <table class="alert-table" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td>标题</td>
+                                <td>描述</td>
+                                <td>时间</td>
+                                <td>状态</td>
+                                <td>区域</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="foot">
+                    <div><span>主办单位：庆城县气象局</span><span>技术支持：浩森网络</span><span>客服电话：(029)88748238</span></div>
+                </div>
+            </div>
+        </div><!-- react-empty: 194 --><!-- react-empty: 195 --></div>
+</div>
+
+<!--<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>-->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/Mock.js/1.0.1-beta3/mock-min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    //模拟后台
+    Mock.mock('http://api.com', {
+        "user|5-10": [{
+            'name': '@cname',   //中文名称
+            'age|1-100': 100,   //100以内随机整数
+            'birthday': '@date("yyyy-MM-dd")',  //日期
+            'city': '@city(true)'   //中国城市
+        }]
+    });
+
+    $(function(){
+        $.ajax({
+            url: 'http://api.com',
+            dataType: 'json'
+        }).done(function(data, status, xhr) {
+            console.log(
+                JSON.stringify(data, null, 4)
+            )
+        });
+    });
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

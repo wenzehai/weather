@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body class="personal">
+<div id="root">
+    <div data-reactroot="" class="static-comp">
+        <nav>
+            <div class="logo-box"><a class="logo" href="index.html"></a></div>
+            <div class="nav-content"><a class="nav-item homepage" href="#/homepage">主页</a>
+                <div class="nav-item static" href="./static">数据中心</div>
+                <div class="nav-item business">业务平台</div>
+                <a class="nav-item product" href="#/product">产品制作</a><a class="nav-item doc" href="#/document">文档管理</a>
+                <div class="nav-item task active">任务平台</div>
+                <ul class="second-menu" style="left: 450px;">
+                    <li><a href="personal.html">个人任务中心</a></li>
+                    <li><a href="manage.html">任务管理平台</a></li>
+                    <li><a href="show.html">任务展示平台</a></li>
+                </ul>
+                <div class="nav-item manage">发布系统</div>
+                <a class="nav-item manage">后台管理</a>
+            </div>
+            <div class="nav-personal"><a class="message"><span class="new-message">3</span></a><a class="help">帮助</a><a
+                    class="signout">退出</a></div>
+        </nav>
+        <div class="main-container">
+            <div class="main-right width-100">
+                <div class="box-mbx"><!-- react-text: 235 -->你的位置：<!-- /react-text --><span><a href="#/homepage">主页</a>
+                    <!-- react-text: 238 --> &gt; <!-- /react-text --></span><span><a>任务平台</a><!-- react-text: 241 --> &gt;
+                    <!-- /react-text --></span><span><a>个人任务中心</a></span></div>
+                <div class="content">
+                    <div class="my-task-title">我的任务
+                        <div class="undone">未完成任务数量&nbsp;&nbsp;30</div>
+                        <div class="done">你已完成的任务&nbsp;&nbsp;70</div>
+                        <div class="all">已分配任务总数&nbsp;&nbsp;100</div>
+                    </div>
+                    <div class="task-search ">年度：<select>
+                        <option value="2018">2018</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                    </select>目标分类：<select>
+                        <option value="19000000000000000001">常规任务</option>
+                        <option value="19000000000000000001">重点任务</option>
+                    </select>任务分类：<select>
+                        <option value="21000000000000000001">基础业务</option>
+                        <option value="21000000000000000001">基础业务</option>
+                    </select>进度：<select>
+                        <option value="1">完成</option>
+                        <option value="2">未完成</option>
+                    </select>
+                        <button class="btn btn-primary">搜索</button>
+                    </div>
+                    <div class="tableWrap">
+                        <table class="mainTable">
+                            <thead>
+                            <tr>
+                                <th>项目</th>
+                                <th>分配日期</th>
+                                <th>序号</th>
+                                <th>任务标题</th>
+                                <th>任务期限</th>
+                                <th>任务状态</th>
+                                <th>任务进度</th>
+                                <th>完成日期</th>
+                                <th>任务备注</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>观测网络及装备保障</td>
+                                <td>2017-5-11</td>
+                                <td>1</td>
+                                <td>认真开展各项观测业务</td>
+                                <td>2017-11-30</td>
+                                <td>有效</td>
+                                <td>未完成</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="javascript: return false;" data-toggle="modal" data-target="#detailModal">任务详情</a></td>
+                            </tr>
+                            <tr>
+                                <td>观测网络及装备保障</td>
+                                <td>2017-5-11</td>
+                                <td>1</td>
+                                <td>认真开展各项观测业务</td>
+                                <td>2017-11-30</td>
+                                <td>有效</td>
+                                <td>未完成</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><a href="javascript:alert(1);">任务详情</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paginationWrap clearfix">
+                        <div class="task-title" style="float:left">
+                            <div class="title">当前搜索出任务总数为<span class="task-num">10</span></div>
+                        </div>
+                        <ul class="ant-pagination " style="float: right;" unselectable="unselectable">
+                            <li title="上一页" class="ant-pagination-prev"><a></a></li>
+                            <li title="1" class="ant-pagination-item ant-pagination-item-1"><a>1</a></li>
+                            <li title="2"
+                                class="ant-pagination-item ant-pagination-item-2 ant-pagination-item-active">
+                                <a>2</a></li>
+                            <li title="3" class="ant-pagination-item ant-pagination-item-3"><a>3</a></li>
+                            <li title="4" class="ant-pagination-item ant-pagination-item-4"><a>4</a></li>
+                            <li title="5" class="ant-pagination-item ant-pagination-item-5"><a>5</a></li>
+                            <li title="向后 5 页" class="ant-pagination-jump-next"><a></a></li>
+                            <li title="10" class="ant-pagination-item ant-pagination-item-10"><a>10</a></li>
+                            <li title="下一页" class="ant-pagination-next"><a></a></li>
+                            <div class="ant-pagination-options">
+                                <div class="ant-pagination-options-quick-jumper"><!-- react-text: 288 -->跳至
+                                    <!-- /react-text --><input type="text" value="2"><!-- react-text: 290 -->页
+                                    <!-- /react-text --></div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot">
+                    <div><span>主办单位：庆城县气象局</span><span>技术支持：浩森网络</span><span>客服电话：(029)88748238</span></div>
+                </div>
+            </div></div>
+    </div>
+</div>
+
+<!-- 详情弹窗 -->
+<div class="modal fade detail_modal" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">任务详情</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="line">
+                        <label for="taskTitle">任务名称</label>
+                        <div class="input-block"><input type="text" class="form-control" id="taskTitle" name="taskTitle" value="认真开展各项观测任务"></div>
+                    </div>
+                    <div class="line">
+                        <label for="taskContent">任务内容</label>
+                        <div class="input-block">
+                            <textarea class="form-control" name="taskContent" id="taskContent" cols="30" rows="5">（1）综合质量指数≥99.5%，完成得5分；否则，每降低0.05%扣1分。（质量统计时段：上年12月
+                            —当年11月）。
+                            （2）国家级自动站及时率：≥98.5%,业务可用性: ≥98.5%。均达标得5分，否则不得分。
+                            （3）区域站及时率：≥96%，业务可用性：≥96% 。均达标得10分，否则不得分。
+                            （4）因责任性或人为原因，未按时完成上级下达的工作任务或导致系统性差错（参数设置错误、
+                            未及时维修维护等），长时间影响相关业务质量，在相应项目（（1）（2）（3）条）中每次扣
+                            5分，扣完为止。
+                            （5）加强观测业务标准化，提高观测数据质量。按要求完成地面标准数据格式并实现业务运行，
+                            完成得5分，否则不得分。
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <label for="taskDes">任务自述</label>
+                        <div class="input-block">
+                            <textarea class="form-control" name="taskContent" id="taskDes" cols="30" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <label for="taskTitle">文本附件</label>
+                        <div class="input-block"><a href="#" class="fileLink">ztidjkfjakfjak.doc</a></div>
+                    </div>
+                    <div class="line">
+                        <label for="taskTitle">图片附件</label>
+                        <div class="input-block"><img  src="https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1533391045&di=dc870071a6ed11c6cbf5cf7ed92e06b5&src=http://www.jajsedu.cn/UploadFile/1/2012/4/26/20124261567419.jpg" alt=""></div>
+                    </div>
+                    <div class="line">
+                        <label for="taskTitle">是否完成</label>
+                        <div class="input-block"><input type="checkbox" name="isDone" value="1" checked="checked"></div>
+                    </div>
+                    <div class="line">
+                        <label for="taskTitle">保存进度</label>
+                        <div class="input-block"><input class="btn btn-primary" type="submit" value="保存进度"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
+
+</body>
+</html>
+</html>
